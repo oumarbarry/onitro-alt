@@ -6,19 +6,18 @@
     "build": "nitropack build",
     "preview": "node .output/server/index.mjs",
     "postinstall": "nitropack prepare",
-    "test": "vitest",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "test": "vitest"
   },
   "dependencies": {
     "cron": "^3.0.0",
     "zod": "^3.22.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config-ts": "^0.43.1",
     "@types/node": "^18.18.3",
     "eslint": "^8.50.0",
+    "eslint-config-unjs": "^0.2.1",
     "nitropack": "^2.6.3",
+    "prettier": "^3.0.3",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
   }

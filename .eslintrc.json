@@ -1,6 +1,6 @@
 {
-  "extends": "@antfu/eslint-config-ts",
+  "extends": "eslint-config-unjs",
   "rules": {
-    "no-console": "off"
+    "no-console": 0
   }
 }
