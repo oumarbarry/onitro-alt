@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nitropack dev",
+    "dev:tunnel": "nitropack dev --tunnel",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "postinstall": "nitropack prepare",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "cron": "^3.0.0",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config-ts": "^0.43.1",
+    "@types/node": "^18.18.3",
+    "eslint": "^8.50.0",
+    "nitropack": "^2.6.3",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  }
+}
