@@ -1,11 +1,10 @@
-interface TypedEventRequest {
-  body: { name: string }
-  query: { id: string }
-}
+export default defineEventHandler<{ body: { name: string } }>(
+  async (event) => {
+    const { id } = getQuery<{ id: string }>(event)
+    const { name } = await readBody(event)
 
-export default defineEventHandler<TypedEventRequest>(async (event) => {
-  const query = getQuery(event)
-  const body = await readBody(event)
+    return { id, name }
+  }
+)
 
-  return { query, body }
-})
+// For runtime validation, check: /api/zod.post.ts
