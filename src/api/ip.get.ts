@@ -1,3 +1,1 @@
-export default defineEventHandler((event) => {
-  return { ip: getRequestIP(event, { xForwardedFor: true }) }
-})
+export default defineEventHandler(event => ({ ip: getRequestIP(event, { xForwardedFor: true }) }))

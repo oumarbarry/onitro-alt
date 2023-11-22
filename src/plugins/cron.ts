@@ -1,7 +1,7 @@
-import { CronJob } from 'cron'
+import { CronJob } from "cron"
 
 export default defineNitroPlugin(() => {
-  const job = new CronJob('00 00 00 * * *', () => {
+  const job = new CronJob("00 00 00 * * *", () => {
     console.log(`Midnight: ${new Date()}`)
   })
 

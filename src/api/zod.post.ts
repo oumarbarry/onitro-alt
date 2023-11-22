@@ -1,5 +1,5 @@
 const userSchema = z.object({
-  name: z.string().default('guest'),
+  name: z.string().default("guest"),
   email: z.string().email(),
 })
 

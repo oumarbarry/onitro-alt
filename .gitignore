@@ -1,8 +1,8 @@
 # Nitro dev/build outputs
 .output
 .nitro
-.cache
 .data
+.cache
 
 # Node dependencies
 node_modules

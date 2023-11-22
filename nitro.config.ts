@@ -1,32 +1,30 @@
 export default defineNitroConfig({
-  srcDir: 'src',
-  errorHandler: '~/customErrorHandler',
+  srcDir: "src",
+  errorHandler: "~/customErrorHandler",
 
   experimental: {
     openAPI: true,
     asyncContext: true,
-    typescriptBundlerResolution: true
+    typescriptBundlerResolution: true,
   },
 
   typescript: {
     // strict: true,
-    internalPaths: true
+    internalPaths: true,
   },
 
   routeRules: {
-    '/api/**': { cors: true },
+    "/api/**": { cors: true },
   },
 
   runtimeConfig: {
-    helloThere: 'HELLO THERE'
+    helloThere: "HELLO THERE",
   },
 
   imports: {
-    dirs: ['./src/composables/**'],
+    dirs: ["./src/composables/**"],
     presets: [
-      { from: 'zod', imports: ['z'] },
+      { from: "zod", imports: ["z"] },
     ],
   },
-
-  // sourceMap: true,
 })

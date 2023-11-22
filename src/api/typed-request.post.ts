@@ -1,10 +1,8 @@
-export default defineEventHandler<{ body: { name: string } }>(
-  async (event) => {
-    const { id } = getQuery<{ id: string }>(event)
-    const { name } = await readBody(event)
+// For runtime validation, check: src/api/zod.post.ts
 
-    return { id, name }
-  }
-)
+export default defineEventHandler<{ body: { name: string } }>(async (event) => {
+  const { id } = getQuery<{ id: string }>(event)
+  const { name } = await readBody(event)
 
-// For runtime validation, check: /api/zod.post.ts
+  return { id, name }
+})

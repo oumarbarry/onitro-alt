@@ -1,8 +1,6 @@
-import type { NitroErrorHandler } from 'nitropack'
+import type { NitroErrorHandler } from "nitropack"
 
-export default <NitroErrorHandler>function (error, event) {
-  const { statusCode, statusMessage, message } = error
-
-  event.node.res.writeHead(statusCode, statusMessage)
-  event.node.res.end(JSON.stringify({ statusCode, message }))
+export default <NitroErrorHandler> function (error, event) {
+  event.node.res.writeHead(error.statusCode, error.statusMessage)
+  event.node.res.end(JSON.stringify({ code: error.statusCode, message: error.statusMessage }))
 }
