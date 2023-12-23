@@ -1,147 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>Nitro Server Routes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Nitro Server Routes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
 
-        h1 {
-            text-align: center;
-        }
+    h1 {
+      text-align: center;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
 
-        th {
-            background-color: #f2f2f2;
-        }
+    th {
+      background-color: #f2f2f2;
+    }
 
-        tr:hover {
-            background-color: #f5f5f5;
-        }
+    tr:hover {
+      background-color: #f5f5f5;
+    }
 
-        a {
-            text-decoration: none;
-            color: #0074d9;
-        }
-    </style>
+    a {
+      text-decoration: none;
+      color: #0074d9;
+    }
+  </style>
 </head>
 <body>
-    <h1>Nitro Server Routes</h1>
-    <table>
-        <tr>
-            <th>Endpoint</th>
-            <th>Description</th>
-            <th>Method</th>
-            <th>Tags</th>
-        </tr>
+  <h1>Nitro Server Routes</h1>
+  <table>
+    <tr>
+      <th>Endpoint</th>
+      <th>Description</th>
+      <th>Method</th>
+      <th>Tags</th>
+    </tr>
 
-        <!-- ENDPOINTS -->
-        <tr>
-            <td><a href="/api/async-context">/api/async-context</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/cached">/api/cached</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/form-data">/api/form-data</a></td>
-            <td>-</td>
-            <td>POST</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/ip">/api/ip</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/kv">/api/kv</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/object-syntax">/api/object-syntax</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/stream">/api/stream</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/typed-event-request">/api/typed-event-request</a></td>
-            <td>-</td>
-            <td>POST</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/upload">/api/upload</a></td>
-            <td>-</td>
-            <td>POST</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/api/zod">/api/zod</a></td>
-            <td>-</td>
-            <td>POST</td>
-            <td>API Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/anything">/{*anything}</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>App Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/">/</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>App Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/redirect">/redirect</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>App Routes</td>
-        </tr>
-        <tr>
-            <td><a href="/_nitro/openapi.json">/_nitro/openapi.json</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>Internal</td>
-        </tr>
-        <tr>
-            <td><a href="/_nitro/swagger">/_nitro/swagger</a></td>
-            <td>-</td>
-            <td>GET</td>
-            <td>Internal</td>
-        </tr>
-    </table>
+    <!-- ENDPOINTS -->
+    <tr>
+      <td><a href="/">/</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>App Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/async-context">/api/async-context</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/cached">/api/cached</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/form-data">/api/form-data</a></td>
+      <td>-</td>
+      <td>POST</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/ip">/api/ip</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/kv">/api/kv</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/object-syntax">/api/object-syntax</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/stream">/api/stream</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/typed-request">/api/typed-request</a></td>
+      <td>-</td>
+      <td>POST</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/upload">/api/upload</a></td>
+      <td>-</td>
+      <td>POST</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/api/zod">/api/zod</a></td>
+      <td>-</td>
+      <td>POST</td>
+      <td>API Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/redirect">/redirect</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>App Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/hello">/{*catch-all-route}</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>App Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/_nitro/openapi.json">/_nitro/openapi.json</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>Internal Routes</td>
+    </tr>
+    <tr>
+      <td><a href="/_nitro/swagger">/_nitro/swagger</a></td>
+      <td>-</td>
+      <td>GET</td>
+      <td>Internal Routes</td>
+    </tr>
+  </table>
 </body>
 </html>

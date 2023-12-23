@@ -23,8 +23,8 @@ export default defineNitroConfig({
 
   imports: {
     dirs: ["./src/composables/**"],
-    presets: [
-      { from: "zod", imports: ["z"] },
+    imports: [
+      { from: "zod", name: "z" },
     ],
   },
 })
