@@ -1,17 +1,14 @@
 export default defineNitroConfig({
-  srcDir: "src",
+  srcDir: "server",
+
   errorHandler: "~/customErrorHandler",
 
   experimental: {
     openAPI: true,
     asyncContext: true,
-    typescriptBundlerResolution: true,
   },
 
-  typescript: {
-    // strict: true,
-    internalPaths: true,
-  },
+  typescript: { internalPaths: true },
 
   routeRules: {
     "/api/**": { cors: true },
@@ -22,7 +19,8 @@ export default defineNitroConfig({
   },
 
   imports: {
-    dirs: ["./src/composables/**"],
+    dirs: ["./server/composables/**"],
+
     imports: [
       { from: "zod", name: "z" },
     ],
